@@ -1,0 +1,75 @@
+body {
+  background: url(./Assets/F1logo.png) center fixed;
+  background-size: cover;
+  cursor: none;
+  font-family: "Amatic SC", cursive;
+}
+
+.hub {
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 20px;
+  justify-content: center;
+}
+
+.info {
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+  font-size: 35px;
+  border: 2px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  padding-top: 25px;
+}
+#time-left {
+  margin-left: 20px;
+}
+
+.btn {
+  color: rgb(255, 255, 255);
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.container {
+  display: grid;
+  width: 80vh;
+  height: 80vh;
+  margin-bottom: 15px;
+}
+
+.col-md-4 {
+  border: 0.5px rgb(38, 38, 38) solid;
+  background-color: #00d2be;
+  opacity: 0.95;
+  border-radius: 90%;
+  box-shadow: inset 0px 10px 0px 7px rgb(53, 21, 6);
+}
+
+.hamilton {
+  background-image: url(./Assets/LewisHam-removebg-preview.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.cursor {
+  height: 110px;
+  width: 100px;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  background-image: url(./Assets/hammer.png);
+  background-size: 100% 100%;
+  transform: translate(-20%, -20%);
+  transition: transform 0.1s;
+  pointer-events: none;
+}
+
+.cursor.active {
+  transform: translate(-20%, -20%) rotate(-45deg);
+}
